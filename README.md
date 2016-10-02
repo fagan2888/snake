@@ -1,0 +1,2 @@
+# snake
+Python miscellaneous directory
