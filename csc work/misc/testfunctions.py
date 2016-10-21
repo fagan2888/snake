@@ -26,14 +26,12 @@ def g4(a,b):
         
     return False
     
-    
 def aer(i,j):
     sum = 0
     for val in range(i, j):
         if (val % 2) == 0:
             sum = sum + val
     return sum
-    
     
 def rem(s, c):
     if len(c) == 1:
@@ -45,21 +43,17 @@ def ff(num):
     if num < 0:
         return num * -1
     return num
-    
 
 def excc(course):
     i = course.index(':')
     return course[i+2: i + 11]
     
-    
 def dtl(items):
     result = []
-
     for val in items:
         result.append(val)
 
     for val in items:
         result.append(val)
-
     return result
     
