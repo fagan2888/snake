@@ -1,0 +1,39 @@
+
+Kernel process terminated for restart. (0)
+
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) on Windows (64 bits).
+This is the Pyzo interpreter with integrated event loop for PYQT5.
+Type 'help' for help, type '?' for a list of *magic* commands.
+
+>>> s = 'abccdeffggh'
+
+>>> for i in range(len(s) - 1):
+...     print(i)
+...     
+... 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+>>> (executing file "loops_over_indices.py")
+
+>>> count_adjacent_repeats(s)
+3
+
+>>> (executing file "loops_over_indices.py")
+
+>>> L = ['a', 'b', 'c', 'd']
+
+>>> shift_left(L)
+
+>>> L
+['b', 'c', 'd', 'a']
+
+>>> 

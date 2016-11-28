@@ -1,0 +1,60 @@
+
+Kernel process terminated for restart. (0)
+
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) on Windows (64 bits).
+This is the Pyzo interpreter with integrated event loop for PYQT5.
+Type 'help' for help, type '?' for a list of *magic* commands.
+
+>>> (executing file "inverting_a_dictionary.py")
+
+>>> fruit_to_colour
+{'pomegranate': 'red', 'plum': 'purple', 'strawberry': 'red', 'peach': 'orange', 'pear': 'green', 'cherry': 'red', 'banana': 'yellow', 'orange': 'orange'}
+
+>>> fruit_to_colour['orange']
+'orange'
+
+>>> fruit_to_colour['banana']
+'yellow'
+
+>>> for fruit in fruit_to_colour:
+...     print(fruit, fruit_to_colour[fruit])
+...     
+... 
+pomegranate red
+plum purple
+strawberry red
+peach orange
+pear green
+cherry red
+banana yellow
+orange orange
+
+>>> (executing file "inverting_a_dictionary.py")
+
+>>> fruit_to_colour
+{'pomegranate': 'red', 'plum': 'purple', 'strawberry': 'red', 'peach': 'orange', 'pear': 'green', 'cherry': 'red', 'banana': 'yellow', 'orange': 'orange'}
+
+>>> colour_to_fruit
+{'purple': 'plum', 'red': 'cherry', 'green': 'pear', 'yellow': 'banana', 'orange': 'orange'}
+
+>>> (executing file "inverting_a_dictionary.py")
+
+>>> fruit_to_colour
+{'pomegranate': 'red', 'plum': 'purple', 'strawberry': 'red', 'peach': 'orange', 'pear': 'green', 'cherry': 'red', 'banana': 'yellow', 'orange': 'orange'}
+
+>>> colour_to_fruit
+{'purple': ['plum'], 'red': ['pomegranate', 'strawberry', 'cherry'], 'green': ['pear'], 'yellow': ['banana'], 'orange': ['peach', 'orange']}
+
+>>> colour_to_fruit['orange']
+['peach', 'orange']
+
+>>> colour_to_fruit['orange'][1]
+'orange'
+
+>>> colour_to_fruit['red']
+['pomegranate', 'strawberry', 'cherry']
+
+>>> colour_to_fruit['red'][-1]
+'cherry'
+
+>>> 

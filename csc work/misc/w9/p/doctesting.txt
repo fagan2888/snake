@@ -1,0 +1,102 @@
+
+Kernel process terminated for restart. (0)
+
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) on Windows (64 bits).
+This is the Pyzo interpreter with integrated event loop for PYQT5.
+Type 'help' for help, type '?' for a list of *magic* commands.
+
+>>> import doctest
+
+>>> doctest.testmod()
+TestResults(failed=0, attempted=0)
+
+>>> (executing file "vowels.py")
+
+>>> doctest.testmod()
+TestResults(failed=0, attempted=0)
+
+>>> (executing file "vowels.py")
+
+>>> doctest.testmod()
+TestResults(failed=0, attempted=4)
+
+>>> (executing file "doctest_examples.py")
+
+>>> doctest.testmod()
+**********************************************************************
+File "__main__", line 38, in __main__.get_divisors
+Failed example:
+    get_divisors(8, [1, 2, 3])
+Exception raised:
+    Traceback (most recent call last):
+      File "c:\users\m\anaconda3\lib\doctest.py", line 1321, in __run
+        compileflags, 1), test.globs)
+      File "<doctest __main__.get_divisors[0]>", line 1, in <module>
+        get_divisors(8, [1, 2, 3])
+      File "C:\Users\m\Python\csc work\misc\w9\p\doctest_examples.py", line 46, in get_divisors
+        divisors.append(item)
+    AttributeError: 'int' object has no attribute 'append'
+**********************************************************************
+File "__main__", line 40, in __main__.get_divisors
+Failed example:
+    get_divisors(4, [-2, 0, 2])
+Exception raised:
+    Traceback (most recent call last):
+      File "c:\users\m\anaconda3\lib\doctest.py", line 1321, in __run
+        compileflags, 1), test.globs)
+      File "<doctest __main__.get_divisors[1]>", line 1, in <module>
+        get_divisors(4, [-2, 0, 2])
+      File "C:\Users\m\Python\csc work\misc\w9\p\doctest_examples.py", line 46, in get_divisors
+        divisors.append(item)
+    AttributeError: 'int' object has no attribute 'append'
+**********************************************************************
+1 items had failures:
+   2 of   2 in __main__.get_divisors
+***Test Failed*** 2 failures.
+TestResults(failed=2, attempted=6)
+
+>>> (executing file "doctest_examples.py")
+
+>>> doctest.testmod()
+**********************************************************************
+File "__main__", line 40, in __main__.get_divisors
+Failed example:
+    get_divisors(4, [-2, 0, 2])
+Exception raised:
+    Traceback (most recent call last):
+      File "c:\users\m\anaconda3\lib\doctest.py", line 1321, in __run
+        compileflags, 1), test.globs)
+      File "<doctest __main__.get_divisors[1]>", line 1, in <module>
+        get_divisors(4, [-2, 0, 2])
+      File "C:\Users\m\Python\csc work\misc\w9\p\doctest_examples.py", line 45, in get_divisors
+        if num % item == 0:
+    ZeroDivisionError: integer division or modulo by zero
+**********************************************************************
+1 items had failures:
+   1 of   2 in __main__.get_divisors
+***Test Failed*** 1 failures.
+TestResults(failed=1, attempted=6)
+
+>>> (executing file "doctest_examples.py")
+
+>>> doctest.testmod()
+**********************************************************************
+File "__main__", line 40, in __main__.get_divisors
+Failed example:
+    get_divisors(4, [-2, 0, 2])
+Expected:
+    [2]
+Got:
+    [-2, 2]
+**********************************************************************
+1 items had failures:
+   1 of   2 in __main__.get_divisors
+***Test Failed*** 1 failures.
+TestResults(failed=1, attempted=6)
+
+>>> (executing file "doctest_examples.py")
+
+>>> doctest.testmod()
+TestResults(failed=0, attempted=6)
+
+>>> 

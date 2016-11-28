@@ -1,0 +1,123 @@
+
+Kernel process terminated for restart. (0)
+
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) on Windows (64 bits).
+This is the Pyzo interpreter with integrated event loop for PYQT5.
+Type 'help' for help, type '?' for a list of *magic* commands.
+
+>>> grades = [['A1', 80], ['A2', 70], ['A3', 90]]
+
+>>> grades[0]
+['A1', 80]
+
+>>> grades[1]
+['A2', 70]
+
+>>> grades[2]
+['A3', 90]
+
+>>> grades[1][0]
+'A2'
+
+>>> grades[1][1]
+70
+
+>>> asn_to_grade = {'A' : 80, 'A2' : 70, 'A3' : 90}
+
+>>> asn_to_grade['A2']
+70
+
+>>> asn_to_grade['A4']
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+KeyError: 'A4'
+
+>>> 'A4' in asn_to_grade
+False
+
+>>> 'A2' in asn_to_grade
+True
+
+>>> 80 in asn_to_grade
+False
+
+>>> len(asn_to_grade)
+3
+
+>>> asn_to_grade['A4'] = 85
+
+>>> len(asn_to
+... _grade)
+  File "<console>", line 2
+    _grade)
+         ^
+SyntaxError: invalid syntax
+
+>>> len(asn_to_grade)
+4
+
+>>> asn_to_grade
+{'A3': 90, 'A2': 70, 'A4': 85, 'A': 80}
+
+>>> asn_to_grade['A4'] = 90
+
+>>> asn_to_grade
+{'A3': 90, 'A2': 70, 'A4': 90, 'A': 80}
+
+>>> del asn_to_grade['A4']
+
+>>> len(asn_to_grade)
+3
+
+>>> asn_to_grade
+{'A3': 90, 'A2': 70, 'A': 80}
+
+>>> for assignment in asn_to_grade:
+...     print(assignment)
+...     
+... 
+A3
+A2
+A
+
+>>> for assignment in asn_to_grade:
+...     print(asn_to_grade[assignment])
+...     
+... 
+90
+70
+80
+
+>>> for assignment in asn_to_grade:
+...     print(assignment, asn_to_grade[assignment])
+...     
+... 
+A3 90
+A2 70
+A 80
+
+>>> d = {}
+
+>>> len(d)
+0
+
+>>> d = {'apple' : 2, 5 : 8}
+
+>>> d[[1, 2]] = 'banana'
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: unhashable type: 'list'
+
+>>> d[(1, 2)] = 'banana'
+
+>>> d
+{(1, 2): 'banana', 'apple': 2, 5: 8}
+
+>>> del d[(1,2)]
+
+>>> 
+
+>>> d
+{'apple': 2, 5: 8}
+
+>>> 

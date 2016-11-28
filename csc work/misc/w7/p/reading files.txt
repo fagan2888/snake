@@ -1,0 +1,302 @@
+
+Kernel process terminated for restart. (0)
+
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) on Windows (64 bits).
+This is the Pyzo interpreter with integrated event loop for PYQT5.
+Type 'help' for help, type '?' for a list of *magic* commands.
+
+>>> flanders_filename = 'C:/Users/m/Python/csc work/misc/w7/p/In Flanders Fields.txt'
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> flanders_file.readline()
+'In Flanders Fields\n'
+
+>>> flanders_file.readline()
+'\n'
+
+>>> flanders_file.readline()
+'In Flanders fields the poppies blow\n'
+
+>>> flanders_file.readline()
+'Between the crosses, row on row,\n'
+
+>>> flanders_file.readline()
+'That mark our place: and in the sky\n'
+
+>>> flanders_file.readline()
+'The larks still bravely singing fly\n'
+
+>>> flanders_file.readline()
+'Scarce heard amid the guns below.\n'
+
+>>> flanders_file.readline()
+'\n'
+
+>>> flanders_file.readline()
+'We are the dead: Short days ago,\n'
+
+>>> flanders_file.readline()
+'We lived, felt dawn, saw sunset glow,\n'
+
+>>> flanders_file.readline()
+'Loved and were loved: and now we lie\n'
+
+>>> flanders_file.readline()
+'In Flanders fields!\n'
+
+>>> flanders_file.readline()
+'\n'
+
+>>> flanders_file.readline()
+'Take up our quarrel with the foe\n'
+
+>>> flanders_file.readline()
+'To you, from failing hands, we throw\n'
+
+>>> flanders_file.readline()
+'The torch: be yours to hold it high\n'
+
+>>> flanders_file.readline()
+'If ye break faith with us who die,\n'
+
+>>> flanders_file.readline()
+'We shall not sleep, though poppies grow\n'
+
+>>> flanders_file.readline()
+'In Flanders fields.\n'
+
+>>> flanders_file.readline()
+'\n'
+
+>>> flanders_file.readline()
+'-John McCrae'
+
+>>> flanders_file.readline()
+''
+
+>>> flanders_file.close()
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> line = flanders_file.readline()
+
+>>> while line != '':
+...     print(line)
+...     line = flanders_file.readline()
+...     
+... 
+In Flanders Fields
+
+
+
+In Flanders fields the poppies blow
+
+Between the crosses, row on row,
+
+That mark our place: and in the sky
+
+The larks still bravely singing fly
+
+Scarce heard amid the guns below.
+
+
+
+We are the dead: Short days ago,
+
+We lived, felt dawn, saw sunset glow,
+
+Loved and were loved: and now we lie
+
+In Flanders fields!
+
+
+
+Take up our quarrel with the foe
+
+To you, from failing hands, we throw
+
+The torch: be yours to hold it high
+
+If ye break faith with us who die,
+
+We shall not sleep, though poppies grow
+
+In Flanders fields.
+
+
+
+-John McCrae
+
+>>> flanders_file.close()
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> line = flanders_file.readline()
+
+>>> while line != '':
+...     print(line, end='')
+...     line = flanders_file.readline()
+...     
+... 
+In Flanders Fields
+
+In Flanders fields the poppies blow
+Between the crosses, row on row,
+That mark our place: and in the sky
+The larks still bravely singing fly
+Scarce heard amid the guns below.
+
+We are the dead: Short days ago,
+We lived, felt dawn, saw sunset glow,
+Loved and were loved: and now we lie
+In Flanders fields!
+
+Take up our quarrel with the foe
+To you, from failing hands, we throw
+The torch: be yours to hold it high
+If ye break faith with us who die,
+We shall not sleep, though poppies grow
+In Flanders fields.
+
+-John McCrae
+>>> line = flanders_file.readline()
+
+>>> line
+''
+
+>>> flanders_file.close()
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> line = flanders_file.readline()
+
+>>> line
+'In Flanders Fields\n'
+
+>>> line = flanders_file.readline()
+
+>>> line = flanders_file.readline()
+
+>>> line
+'In Flanders fields the poppies blow\n'
+
+>>> while line != '\n':
+...     print(line)
+...     line = flanders_file.readline()
+...     
+... 
+In Flanders fields the poppies blow
+
+Between the crosses, row on row,
+
+That mark our place: and in the sky
+
+The larks still bravely singing fly
+
+Scarce heard amid the guns below.
+
+
+>>> flanders_file.close()
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> for line in flanders_file:
+...     print(line, end='')
+...     
+... 
+In Flanders Fields
+
+In Flanders fields the poppies blow
+Between the crosses, row on row,
+That mark our place: and in the sky
+The larks still bravely singing fly
+Scarce heard amid the guns below.
+
+We are the dead: Short days ago,
+We lived, felt dawn, saw sunset glow,
+Loved and were loved: and now we lie
+In Flanders fields!
+
+Take up our quarrel with the foe
+To you, from failing hands, we throw
+The torch: be yours to hold it high
+If ye break faith with us who die,
+We shall not sleep, though poppies grow
+In Flanders fields.
+
+-John McCrae
+>>> flanders_file.close()
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> print(flanders_file.read())
+In Flanders Fields
+
+In Flanders fields the poppies blow
+Between the crosses, row on row,
+That mark our place: and in the sky
+The larks still bravely singing fly
+Scarce heard amid the guns below.
+
+We are the dead: Short days ago,
+We lived, felt dawn, saw sunset glow,
+Loved and were loved: and now we lie
+In Flanders fields!
+
+Take up our quarrel with the foe
+To you, from failing hands, we throw
+The torch: be yours to hold it high
+If ye break faith with us who die,
+We shall not sleep, though poppies grow
+In Flanders fields.
+
+-John McCrae
+
+>>> flanders_file.close()
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> flanders_file.readlines()
+['In Flanders Fields\n', '\n', 'In Flanders fields the poppies blow\n', 'Between the crosses, row on row,\n', 'That mark our place: and in the sky\n', 'The larks still bravely singing fly\n', 'Scarce heard amid the guns below.\n', '\n', 'We are the dead: Short days ago,\n', 'We lived, felt dawn, saw sunset glow,\n', 'Loved and were loved: and now we lie\n', 'In Flanders fields!\n', '\n', 'Take up our quarrel with the foe\n', 'To you, from failing hands, we throw\n', 'The torch: be yours to hold it high\n', 'If ye break faith with us who die,\n', 'We shall not sleep, though poppies grow\n', 'In Flanders fields.\n', '\n', '-John McCrae']
+
+>>> flanders_file.close()
+
+>>> flanders_file = open(flanders_filename, 'r')
+
+>>> lines = flanders_file.readlines()
+
+>>> for line in lines:
+...     print(line, end='')
+...     
+... 
+In Flanders Fields
+
+In Flanders fields the poppies blow
+Between the crosses, row on row,
+That mark our place: and in the sky
+The larks still bravely singing fly
+Scarce heard amid the guns below.
+
+We are the dead: Short days ago,
+We lived, felt dawn, saw sunset glow,
+Loved and were loved: and now we lie
+In Flanders fields!
+
+Take up our quarrel with the foe
+To you, from failing hands, we throw
+The torch: be yours to hold it high
+If ye break faith with us who die,
+We shall not sleep, though poppies grow
+In Flanders fields.
+
+-John McCrae
+>>> flanders_file.close()
+
+>>> lines[0]
+'In Flanders Fields\n'
+
+>>> lines[1]
+'\n'
+
+>>> 

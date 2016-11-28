@@ -1,0 +1,284 @@
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) on Windows (64 bits).
+This is the Pyzo interpreter with integrated event loop for PYQT5.
+Type 'help' for help, type '?' for a list of *magic* commands.
+
+>>> grades = [80, 90, 70]
+
+>>> grades[0]
+80
+
+>>> grades[1]
+90
+
+>>> grades[2]
+70
+
+>>> grades[1:2]
+[90]
+
+>>> grades[0:2]
+[80, 90]
+
+>>> 80 in grades
+True
+
+>>> 60 in grades
+False
+
+>>> len(grades)
+3
+
+>>> min(grades)
+70
+
+>>> max(grades)
+90
+
+>>> sum(grades)
+240
+
+>>> subjects = ['bio', 'cs', 'math']
+
+>>> len(subjects)
+3
+
+>>> min(subjects)
+'bio'
+
+>>> max(subjects)
+'math'
+
+>>> sum(subjects)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+>>> temperatures = [18, 20, 22.5, 24]
+
+>>> temperatures[-1]
+24
+
+>>> temperatures[3:]
+[24]
+
+>>> temperatures[3:4]
+[24]
+
+>>> sum([4])
+4
+
+>>> street_address = [10, 'main street']
+
+>>> for grade in grades:
+...     print(grade)
+...     
+... 
+80
+90
+70
+
+>>> for item in subjects:
+...     print(item)
+...     
+... 
+bio
+cs
+math
+
+>>> subjects.add('history')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'add'
+
+>>> subjects.append('history')
+
+>>> subjects
+['bio', 'cs', 'math', 'history']
+
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+>>> colours = []
+
+>>> promt = "enter another one of your favorite colours (type return to end):"
+
+>>> colour = input(prompt)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'prompt' is not defined
+
+>>> colour = input(promt)
+enter another one of your favorite colours (type return to end):blue
+
+>>> colour
+'blue'
+
+>>> colours
+[]
+
+>>> while colour != '':
+...     colours.append(colour)
+...     colour = input(promt)
+...     
+... 
+enter another one of your favorite colours (type return to end):yellow
+enter another one of your favorite colours (type return to end):brown
+enter another one of your favorite colours (type return to end):return
+enter another one of your favorite colours (type return to end):
+
+>>> colours
+['blue', 'yellow', 'brown', 'return']
+
+>>> colours.remove('return')
+
+>>> colours
+['blue', 'yellow', 'brown']
+
+>>> colours.extend(['pink', 'neon green'])
+
+>>> colours
+['blue', 'yellow', 'brown', 'pink', 'neon green']
+
+>>> colours.pop()
+'neon green'
+
+>>> colours
+['blue', 'yellow', 'brown', 'pink']
+
+>>> colours.pop(2)
+'brown'
+
+>>> colours
+['blue', 'yellow', 'pink']
+
+>>> colours.remove('black')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+
+>>> if colours.count('yellow') > 0:
+...     colours.remove('yellow')
+...     
+... 
+
+>>> colours
+['blue', 'pink']
+
+>>> if 'yellow' in colours:
+...     colours.remove('yellow')
+...     
+... 
+
+>>> colours
+['blue', 'pink']
+
+>>> grades = [60, 70]
+
+>>> grades.append([80, 90])
+
+>>> grades
+[60, 70, [80, 90]]
+
+>>> grades.remove([80, 90])
+
+>>> grades.append(80)
+
+>>> graes
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'graes' is not defined
+
+>>> grades
+[60, 70, 80]
+
+>>> grades.append(90)
+
+>>> grades
+[60, 70, 80, 90]
+
+>>> grades.extend(80, 90)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: extend() takes exactly one argument (2 given)
+
+>>> grades.extend([100, 110])
+
+>>> grades
+[60, 70, 80, 90, 100, 110]
+
+>>> grades = [70, 60, 75, 60]
+
+>>> grades.pop()
+60
+
+>>> grades
+[70, 60, 75]
+
+>>> grades.pop(1)
+60
+
+>>> grades
+[70, 75]
+
+>>> grades.append(60)
+
+>>> grades.remove(60)
+
+>>> grades
+[70, 75]
+
+>>> colours.extend('auburn', 'taupe', 'magenta')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: extend() takes exactly one argument (3 given)
+
+>>> colours.extend(['auburn', 'taupe', 'magenta'])
+
+>>> colours
+['blue', 'pink', 'auburn', 'taupe', 'magenta']
+
+>>> colours.sort()
+
+>>> colours
+['auburn', 'blue', 'magenta', 'pink', 'taupe']
+
+>>> colours.reverse()
+
+>>> colours
+['taupe', 'pink', 'magenta', 'blue', 'auburn']
+
+>>> colours.insert(-2, 'brown')
+
+>>> colours
+['taupe', 'pink', 'magenta', 'brown', 'blue', 'auburn']
+
+>>> list.index('neon green')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: descriptor 'index' requires a 'list' object but received a 'str'
+
+>>> colours.index('neon green')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ValueError: 'neon green' is not in list
+
+>>> if 'pink' in colours:
+...     where = colours.index('pink')
+...     colours.pop(where)
+...     
+... 
+'pink'
+
+>>> colours
+['taupe', 'magenta', 'brown', 'blue', 'auburn']
+
+>>> grades = [80, 70, 60, 90]
+
+>>> grades.sort()
+
+>>> grades.insert(1, 95)
+
+>>> grades
+[60, 95, 70, 80, 90]
+
+>>> 

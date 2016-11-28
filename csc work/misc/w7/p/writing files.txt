@@ -1,0 +1,42 @@
+
+Kernel process terminated for restart. (0)
+
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) on Windows (64 bits).
+This is the Pyzo interpreter with integrated event loop for PYQT5.
+Type 'help' for help, type '?' for a list of *magic* commands.
+
+>>> import tkinter.filedialog
+
+>>> tkinter.filedialog.askopenfilename()
+'C:/Users/m/Python/csc work/misc/w7/p/In Flanders Fields.txt'
+
+>>> from_filename = tkinter.filedialog.askopenfilename()
+
+>>> from_filename
+'C:/Users/m/Python/csc work/misc/w7/p/In Flanders Fields.txt'
+
+>>> to_filename = tkinter.filedialog.asksaveasfilename()
+
+>>> to_filename
+'C:/Users/m/Python/csc work/misc/w7/r/Flanders copy.txt'
+
+>>> from_file = open(from_filename, 'r')
+
+>>> contents = from_file.read()
+
+>>> from_file.close()
+
+>>> contents
+'In Flanders Fields\n\nIn Flanders fields the poppies blow\nBetween the crosses, row on row,\nThat mark our place: and in the sky\nThe larks still bravely singing fly\nScarce heard amid the guns below.\n\nWe are the dead: Short days ago,\nWe lived, felt dawn, saw sunset glow,\nLoved and were loved: and now we lie\nIn Flanders fields!\n\nTake up our quarrel with the foe\nTo you, from failing hands, we throw\nThe torch: be yours to hold it high\nIf ye break faith with us who die,\nWe shall not sleep, though poppies grow\nIn Flanders fields.\n\n-John McCrae'
+
+>>> to_file = open(to_filename, 'w')
+
+>>> to_file.write("Copy\n")
+5
+
+>>> to_file.write(contents)
+539
+
+>>> to_file.close()
+
+>>> 
